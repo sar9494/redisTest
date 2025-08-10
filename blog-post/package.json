@@ -1,0 +1,57 @@
+{
+    "name": "blog-post",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "start": "nodemon --exec ts-node ./src/index.ts",
+        "lint": "eslint .",
+        "format": "prettier --write ."
+    },
+    "_moduleAliases": {
+        "@controllers": "src/controllers",
+        "@models": "src/models",
+        "@utils": "src/utils",
+        "@middlewares": "src/middlewares",
+        "@routes": "src/routes"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/express": "^5.0.3",
+        "bcrypt": "^6.0.0",
+        "cors": "^2.8.5",
+        "express": "^5.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "jwt-decode": "^4.0.0",
+        "module-alias": "^2.2.3",
+        "mongodb": "^6.18.0",
+        "mongoose": "^8.17.0",
+        "zod": "^4.0.14"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.32.0",
+        "@types/bcrypt": "^6.0.0",
+        "@types/cors": "^2.8.19",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/module-alias": "^2.0.4",
+        "@types/node": "^24.1.0",
+        "@typescript-eslint/eslint-plugin": "^8.39.0",
+        "@typescript-eslint/parser": "^8.39.0",
+        "eslint": "^9.32.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-react": "^7.37.5",
+        "globals": "^16.3.0",
+        "jiti": "^2.5.1",
+        "prettier": "3.6.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.2",
+        "typescript-eslint": "^8.39.0"
+    }
+}
