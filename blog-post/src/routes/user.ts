@@ -4,15 +4,11 @@ import { checkUserExist } from '@middlewares/user/checkUserExist'
 
 export const userRouter = express.Router()
 
-userRouter.post(
-    '/sign-up',
-    checkUserExist,
-    async (req: Request, res: Response) => {
-        const response = await createUser(req.body)
-        console.log('SIGN', response)
-        res.send('yep')
-    }
-)
+userRouter.post('/sign-up', async (req: Request, res: Response) => {
+    const response = await createUser(req.body)
+    console.log('SIGN', response)
+    res.send('yep')
+})
 userRouter.post(
     '/log-in',
     checkUserExist,
